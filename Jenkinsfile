@@ -28,4 +28,10 @@ node {
          * Pushing multiple tags is cheap, as all the layers are reused. */
        echo 'HELLO-WORLD-4'
     }
+    stage('Deliver image') {
+        /* We test our image with a simple smoke test:
+         * Run a curl inside the newly-build Docker image */
+
+        echo 'HELLO-WORLD-5 -by KADER'
+    }
 }
